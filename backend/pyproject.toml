@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[project]
+name = "firewatch-sentinel"
+version = "9.0.1"
+description = "FIREWATCH Sentinel: evidence-driven, scope-controlled web application security assessment"
+requires-python = ">=3.11"
