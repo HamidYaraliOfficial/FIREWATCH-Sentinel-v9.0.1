@@ -1,0 +1,730 @@
+{
+  "version": "8.0.0",
+  "standards": {
+    "owasp_top_10": "2025",
+    "owasp_asvs": "5.0.0",
+    "owasp_wstg_stable": "4.2 (stable; WSTG 5.0 is under development)",
+    "owasp_api_security_top_10": "2023"
+  },
+  "total_cases": 79,
+  "execution_mode_counts": {
+    "manual_or_test-account_required": 38,
+    "automated_passive": 22,
+    "automated_review_candidate": 13,
+    "optional_specialist_tool_required": 6
+  },
+  "test_cases": [
+    {
+      "id": "WSTG-INFO-01",
+      "category": "Information Gathering",
+      "title": "Search-engine / public metadata review",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-INFO",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INFO-02",
+      "category": "Information Gathering",
+      "title": "Fingerprint web server and technologies",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-INFO",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-INFO-03",
+      "category": "Information Gathering",
+      "title": "Review metadata and comments in HTML",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-INFO",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-INFO-04",
+      "category": "Information Gathering",
+      "title": "Enumerate application entry points",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-INFO",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-INFO-05",
+      "category": "Information Gathering",
+      "title": "Review web page content for information leakage",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-INFO",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-INFO-06",
+      "category": "Information Gathering",
+      "title": "Identify application frameworks",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-INFO",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-INFO-07",
+      "category": "Information Gathering",
+      "title": "Map execution paths and discovered routes",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-INFO",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CONF-01",
+      "category": "Configuration",
+      "title": "Check security headers and browser policy",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CONF-02",
+      "category": "Configuration",
+      "title": "Review exposed backup/configuration artifacts",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-CONF-03",
+      "category": "Configuration",
+      "title": "Review HTTP methods and OPTIONS observations",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CONF-04",
+      "category": "Configuration",
+      "title": "Review TLS/certificate posture",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CONF-05",
+      "category": "Configuration",
+      "title": "Check subdomain takeover conditions",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-CONF-06",
+      "category": "Configuration",
+      "title": "Review application/platform error handling",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CONF-07",
+      "category": "Configuration",
+      "title": "Review HSTS, redirect and cleartext transport",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CONF-08",
+      "category": "Configuration",
+      "title": "Review CSP directives and enforcement",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CONF-09",
+      "category": "Configuration",
+      "title": "Review source-map and public asset indicators",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-CONF-10",
+      "category": "Configuration",
+      "title": "Review cross-origin isolation policy",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-CONF",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-IDNT-01",
+      "category": "Identity",
+      "title": "Role/tenant model and identity lifecycle",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-IDNT",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-IDNT-02",
+      "category": "Identity",
+      "title": "Account enumeration on registration/recovery",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-IDNT",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHN-01",
+      "category": "Authentication",
+      "title": "Credentials transported only over HTTPS",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-ATHN-02",
+      "category": "Authentication",
+      "title": "Default/weak credential assessment",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHN-03",
+      "category": "Authentication",
+      "title": "Password policy and breached-password checks",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHN-04",
+      "category": "Authentication",
+      "title": "Authentication bypass and alternate channels",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHN-05",
+      "category": "Authentication",
+      "title": "MFA enforcement and recovery controls",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHN-06",
+      "category": "Authentication",
+      "title": "Password reset and account recovery workflows",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHN-07",
+      "category": "Authentication",
+      "title": "Rate limiting and lockout behavior",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHN-08",
+      "category": "Authentication",
+      "title": "Authentication response differences",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHN-09",
+      "category": "Authentication",
+      "title": "Logout and session invalidation",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHN",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHZ-01",
+      "category": "Authorization",
+      "title": "Read-only comparison of supplied role profiles",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-ATHZ",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHZ-02",
+      "category": "Authorization",
+      "title": "Vertical privilege escalation / function authorization",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHZ",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHZ-03",
+      "category": "Authorization",
+      "title": "Horizontal access / IDOR / BOLA",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHZ",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHZ-04",
+      "category": "Authorization",
+      "title": "Tenant isolation and object ownership",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHZ",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ATHZ-05",
+      "category": "Authorization",
+      "title": "Path traversal and forced browsing",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-ATHZ",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-SESS-01",
+      "category": "Session Management",
+      "title": "Cookie Secure/HttpOnly/SameSite flags",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-SESS",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-SESS-02",
+      "category": "Session Management",
+      "title": "Cookie prefixes and SameSite=None constraints",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-SESS",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-SESS-03",
+      "category": "Session Management",
+      "title": "Session fixation and rotation",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-SESS",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-SESS-04",
+      "category": "Session Management",
+      "title": "Session timeout and renewal",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-SESS",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-SESS-05",
+      "category": "Session Management",
+      "title": "CSRF tokens and origin validation",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-SESS",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-SESS-06",
+      "category": "Session Management",
+      "title": "Concurrent sessions and logout invalidation",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-SESS",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-SESS-07",
+      "category": "Session Management",
+      "title": "Cache-control behavior for personalized content",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-SESS",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-01",
+      "category": "Input Validation",
+      "title": "Reflected input canary (not an XSS proof)",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-02",
+      "category": "Input Validation",
+      "title": "Stored and DOM-based cross-site scripting (XSS) assessment",
+      "execution_mode": "optional_specialist_tool_required",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-03",
+      "category": "Input Validation",
+      "title": "SQL/NoSQL injection confirmation",
+      "execution_mode": "optional_specialist_tool_required",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-04",
+      "category": "Input Validation",
+      "title": "OS command injection",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-05",
+      "category": "Input Validation",
+      "title": "Server-side template injection",
+      "execution_mode": "optional_specialist_tool_required",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-06",
+      "category": "Input Validation",
+      "title": "LDAP/XPath/other interpreter injection",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-07",
+      "category": "Input Validation",
+      "title": "XML external entity processing (XXE)",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-08",
+      "category": "Input Validation",
+      "title": "SSRF and URL-fetch input review",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-09",
+      "category": "Input Validation",
+      "title": "Path traversal and file inclusion",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-INPV-10",
+      "category": "Input Validation",
+      "title": "HTTP parameter pollution and mass assignment",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-INPV",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-ERRH-01",
+      "category": "Error Handling",
+      "title": "Verbose framework / stack-trace disclosure",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-ERRH",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CRYP-01",
+      "category": "Cryptography",
+      "title": "TLS certificate, protocol and cipher posture",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CRYP",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CRYP-02",
+      "category": "Cryptography",
+      "title": "Sensitive data over cleartext transport",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "WSTG-CRYP",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-BUSL-01",
+      "category": "Business Logic",
+      "title": "Workflow/state-machine validation",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-BUSL",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-BUSL-02",
+      "category": "Business Logic",
+      "title": "Price/quantity/coupon/limit manipulation",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-BUSL",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-BUSL-03",
+      "category": "Business Logic",
+      "title": "Replay, idempotency and duplicate submission",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-BUSL",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-BUSL-04",
+      "category": "Business Logic",
+      "title": "Abuse of application workflows",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "WSTG-BUSL",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-CLNT-01",
+      "category": "Client-side",
+      "title": "DOM sinks and client-side data flow",
+      "execution_mode": "optional_specialist_tool_required",
+      "standard_mapping": "WSTG-CLNT",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "WSTG-CLNT-02",
+      "category": "Client-side",
+      "title": "Third-party script SRI and supply chain",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CLNT",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CLNT-03",
+      "category": "Client-side",
+      "title": "CORS and cross-origin policy observations",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CLNT",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "WSTG-CLNT-04",
+      "category": "Client-side",
+      "title": "Clickjacking defense",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "WSTG-CLNT",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "API-01",
+      "category": "API Security",
+      "title": "API inventory and deprecated/versioned routes",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "API-02",
+      "category": "API Security",
+      "title": "OpenAPI/Swagger authentication declaration review",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "API-03",
+      "category": "API Security",
+      "title": "GraphQL discovery and read-only introspection",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "API-04",
+      "category": "API Security",
+      "title": "BOLA / object-level authorization",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "API-05",
+      "category": "API Security",
+      "title": "Broken function-level authorization",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "API-06",
+      "category": "API Security",
+      "title": "Property-level authorization and mass assignment",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "API-07",
+      "category": "API Security",
+      "title": "Authentication and token lifecycle",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "API-08",
+      "category": "API Security",
+      "title": "Resource-consumption/rate-limit policy",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "API-09",
+      "category": "API Security",
+      "title": "SSRF-like URL parameters in API specs",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "API-10",
+      "category": "API Security",
+      "title": "API misconfiguration and sensitive data exposure",
+      "execution_mode": "automated_review_candidate",
+      "standard_mapping": "OWASP API Top 10",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "SUPPLY-01",
+      "category": "Software Supply Chain",
+      "title": "Third-party script integrity indicators",
+      "execution_mode": "automated_passive",
+      "standard_mapping": "OWASP Top 10:2025",
+      "safe_by_default": true,
+      "status_semantics": "implemented"
+    },
+    {
+      "id": "SUPPLY-02",
+      "category": "Software Supply Chain",
+      "title": "Dependency/SBOM vulnerability review",
+      "execution_mode": "optional_specialist_tool_required",
+      "standard_mapping": "OWASP ASVS 5.0",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "CLOUD-01",
+      "category": "Cloud/Deployment",
+      "title": "Cloud IAM and storage policy review",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP ASVS 5.0",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "CLOUD-02",
+      "category": "Cloud/Deployment",
+      "title": "Container image and IaC scanning",
+      "execution_mode": "optional_specialist_tool_required",
+      "standard_mapping": "OWASP ASVS 5.0",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "PRIV-01",
+      "category": "Privacy/Data Exposure",
+      "title": "PII exposure in authenticated response bodies",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP ASVS 5.0",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "LOG-01",
+      "category": "Logging/Monitoring",
+      "title": "Security event logging and alerting validation",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP ASVS 5.0",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "UPLOAD-01",
+      "category": "File Upload",
+      "title": "Upload type, storage, execution and size controls",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP WSTG",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    },
+    {
+      "id": "UPLOAD-02",
+      "category": "File Upload",
+      "title": "Download disposition and path handling",
+      "execution_mode": "manual_or_test-account_required",
+      "standard_mapping": "OWASP WSTG",
+      "safe_by_default": true,
+      "status_semantics": "candidate_or_additional_validation_required"
+    }
+  ],
+  "disclaimer": "This is a coverage plan. Manual/tool-required entries are not executed by the built-in safe scanner. No-finding does not prove absence."
+}

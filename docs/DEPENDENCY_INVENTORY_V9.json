@@ -1,0 +1,210 @@
+{
+  "inventory_schema": "firewatch.declared-dependency-inventory.v1",
+  "application": "FIREWATCH Sentinel",
+  "application_version": "9.0.1",
+  "python_requires": ">=3.11",
+  "source_files": [
+    "backend/requirements.txt",
+    "backend/requirements-dev.txt"
+  ],
+  "component_count": 17,
+  "components": [
+    {
+      "name": "bandit",
+      "normalized_name": "bandit",
+      "extras": [],
+      "version_constraint": "==1.9.4",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements-dev.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "beautifulsoup4",
+      "normalized_name": "beautifulsoup4",
+      "extras": [],
+      "version_constraint": "==4.14.3",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "cryptography",
+      "normalized_name": "cryptography",
+      "extras": [],
+      "version_constraint": ">=44,<47",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "fastapi",
+      "normalized_name": "fastapi",
+      "extras": [],
+      "version_constraint": "==0.141.1",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "httpcore",
+      "normalized_name": "httpcore",
+      "extras": [],
+      "version_constraint": "==1.0.9",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "httpx",
+      "normalized_name": "httpx",
+      "extras": [],
+      "version_constraint": "==0.28.1",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "Jinja2",
+      "normalized_name": "jinja2",
+      "extras": [],
+      "version_constraint": "==3.1.6",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "pip-audit",
+      "normalized_name": "pip-audit",
+      "extras": [],
+      "version_constraint": "==2.10.1",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements-dev.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "playwright",
+      "normalized_name": "playwright",
+      "extras": [],
+      "version_constraint": "==1.63.0",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "psycopg",
+      "normalized_name": "psycopg",
+      "extras": [
+        "binary"
+      ],
+      "version_constraint": ">=3.2,<4",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "pytest",
+      "normalized_name": "pytest",
+      "extras": [],
+      "version_constraint": "==9.0.2",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements-dev.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "pytest-asyncio",
+      "normalized_name": "pytest-asyncio",
+      "extras": [],
+      "version_constraint": ">=1.0,<2",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements-dev.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "pytest-cov",
+      "normalized_name": "pytest-cov",
+      "extras": [],
+      "version_constraint": "==7.0.0",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements-dev.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "python-multipart",
+      "normalized_name": "python-multipart",
+      "extras": [],
+      "version_constraint": ">=0.0.20,<1",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "PyYAML",
+      "normalized_name": "pyyaml",
+      "extras": [],
+      "version_constraint": "==6.0.3",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "SQLAlchemy",
+      "normalized_name": "sqlalchemy",
+      "extras": [],
+      "version_constraint": "==2.0.54",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    },
+    {
+      "name": "uvicorn",
+      "normalized_name": "uvicorn",
+      "extras": [
+        "standard"
+      ],
+      "version_constraint": "==0.48.0",
+      "environment_marker": null,
+      "source_files": [
+        "backend/requirements.txt"
+      ],
+      "resolution_status": "declared_constraint_not_resolved"
+    }
+  ],
+  "limitations": [
+    "This is a declared-requirements inventory, not a resolved SBOM.",
+    "Constraint ranges are not resolved to installed artifact versions.",
+    "Transitive dependency closure and vulnerability status are not implied.",
+    "Run pip-audit in a trusted environment with package index access before release/deployment."
+  ]
+}

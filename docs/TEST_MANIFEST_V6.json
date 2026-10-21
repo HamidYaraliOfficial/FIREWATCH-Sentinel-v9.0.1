@@ -1,0 +1,164 @@
+{
+  "release_version": "6.0.0",
+  "test_count": 1483,
+  "module_count": 31,
+  "collection_command": "python -m pytest --collect-only -q -o addopts= tests (from backend/)",
+  "modules": [
+    {
+      "file": "test_api.py",
+      "count": 6,
+      "focus": "API health/readiness, security headers, evidence and report bundles"
+    },
+    {
+      "file": "test_checks.py",
+      "count": 1,
+      "focus": "Rule registry smoke test"
+    },
+    {
+      "file": "test_integration.py",
+      "count": 1,
+      "focus": "Local-only end-to-end demo scan and report generation"
+    },
+    {
+      "file": "test_scope.py",
+      "count": 2,
+      "focus": "Basic scope rules"
+    },
+    {
+      "file": "test_security_regressions.py",
+      "count": 14,
+      "focus": "Credential encryption, secret redaction and earlier security fixes"
+    },
+    {
+      "file": "test_v4_security.py",
+      "count": 6,
+      "focus": "Origin credential isolation and transport guard regressions"
+    },
+    {
+      "file": "test_v5_api_extended.py",
+      "count": 8,
+      "focus": "API versioning, auth gate and assessment-plan contract"
+    },
+    {
+      "file": "test_v5_authz_matrix.py",
+      "count": 14,
+      "focus": "Read-only authorization comparison matrix"
+    },
+    {
+      "file": "test_v5_authz_policy.py",
+      "count": 17,
+      "focus": "Authorization policy and profile input matrix"
+    },
+    {
+      "file": "test_v5_browser_mock.py",
+      "count": 3,
+      "focus": "Browser discovery under mocked browser objects"
+    },
+    {
+      "file": "test_v5_cli.py",
+      "count": 7,
+      "focus": "CLI invocation, invalid target and report behavior"
+    },
+    {
+      "file": "test_v5_discovery_components.py",
+      "count": 18,
+      "focus": "Crawler, API discovery and bounded parameter-probe behavior"
+    },
+    {
+      "file": "test_v5_misc_invariants.py",
+      "count": 7,
+      "focus": "Cross-module safety invariants"
+    },
+    {
+      "file": "test_v5_redaction_matrix.py",
+      "count": 70,
+      "focus": "Original secret redaction regression matrix"
+    },
+    {
+      "file": "test_v5_risk_catalog.py",
+      "count": 35,
+      "focus": "Risk score and assessment catalog invariants"
+    },
+    {
+      "file": "test_v5_schema_matrix.py",
+      "count": 39,
+      "focus": "Input schema and malformed values"
+    },
+    {
+      "file": "test_v5_scope_matrix.py",
+      "count": 44,
+      "focus": "Unit and regression tests"
+    },
+    {
+      "file": "test_v5_security_checks.py",
+      "count": 44,
+      "focus": "Cookie, header, CSP and API security checks"
+    },
+    {
+      "file": "test_v5_tls_matrix.py",
+      "count": 9,
+      "focus": "TLS parsing and connection error behavior"
+    },
+    {
+      "file": "test_v5_transport_report.py",
+      "count": 34,
+      "focus": "HTTP transport, redirect and report escaping"
+    },
+    {
+      "file": "test_v5_worker_planner_zap.py",
+      "count": 21,
+      "focus": "Worker queue, planner modes and ZAP plan safety"
+    },
+    {
+      "file": "test_v6_api_route_contract_matrix.py",
+      "count": 17,
+      "focus": "Unit and regression tests"
+    },
+    {
+      "file": "test_v6_catalog_report_contract.py",
+      "count": 109,
+      "focus": "Assessment/check catalog contracts and all report formats"
+    },
+    {
+      "file": "test_v6_config_parser_matrix.py",
+      "count": 26,
+      "focus": "Environment configuration parser boundary and malformed-value handling"
+    },
+    {
+      "file": "test_v6_http_method_and_redirect_matrix.py",
+      "count": 13,
+      "focus": "HTTP method, no-follow redirect and pre-network scope enforcement"
+    },
+    {
+      "file": "test_v6_origin_credential_isolation.py",
+      "count": 18,
+      "focus": "Exact-origin credential guards including same-host different-port regression"
+    },
+    {
+      "file": "test_v6_redaction_fuzz_matrix.py",
+      "count": 149,
+      "focus": "Every registered sensitive field/query name plus recursive redaction matrix"
+    },
+    {
+      "file": "test_v6_risk_math_matrix.py",
+      "count": 532,
+      "focus": "Fine-grained severity/confidence risk scoring invariants"
+    },
+    {
+      "file": "test_v6_rule_behavior_matrix.py",
+      "count": 75,
+      "focus": "Parameterized behavior checks for the registered passive and low-impact security rules"
+    },
+    {
+      "file": "test_v6_schema_hardening_matrix.py",
+      "count": 51,
+      "focus": "Boundary-value, header-injection and authorization profile schema checks"
+    },
+    {
+      "file": "test_v6_scope_fuzz_matrix.py",
+      "count": 93,
+      "focus": "Adversarial URL, nested encoding, ports, scope joins and exclusion boundaries"
+    }
+  ],
+  "interpretation": "Software regression tests and code coverage are not a percentage of vulnerabilities detected."
+}

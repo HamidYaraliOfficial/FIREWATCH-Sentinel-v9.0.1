@@ -1,0 +1,214 @@
+{
+  "release_version": "7.0.0",
+  "test_count": 2763,
+  "module_count": 41,
+  "collection_command": "python -m pytest --collect-only -q -o addopts= tests (from backend/)",
+  "modules": [
+    {
+      "file": "test_api.py",
+      "count": 6,
+      "focus": "API health/readiness, security headers, evidence and report bundles"
+    },
+    {
+      "file": "test_checks.py",
+      "count": 1,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_integration.py",
+      "count": 1,
+      "focus": "Local-only end-to-end demo scan and report generation"
+    },
+    {
+      "file": "test_scope.py",
+      "count": 2,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_security_regressions.py",
+      "count": 14,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v4_security.py",
+      "count": 6,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_api_extended.py",
+      "count": 8,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_authz_matrix.py",
+      "count": 14,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_authz_policy.py",
+      "count": 17,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_browser_mock.py",
+      "count": 3,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_cli.py",
+      "count": 7,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_discovery_components.py",
+      "count": 18,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_misc_invariants.py",
+      "count": 7,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_redaction_matrix.py",
+      "count": 70,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_risk_catalog.py",
+      "count": 35,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_schema_matrix.py",
+      "count": 39,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_scope_matrix.py",
+      "count": 44,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_security_checks.py",
+      "count": 44,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_tls_matrix.py",
+      "count": 9,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_transport_report.py",
+      "count": 34,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v5_worker_planner_zap.py",
+      "count": 21,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v6_api_route_contract_matrix.py",
+      "count": 17,
+      "focus": "Unit, matrix, integration, and regression tests"
+    },
+    {
+      "file": "test_v6_catalog_report_contract.py",
+      "count": 109,
+      "focus": "Assessment/check catalog contracts and all report formats"
+    },
+    {
+      "file": "test_v6_config_parser_matrix.py",
+      "count": 26,
+      "focus": "Environment configuration parser boundary and malformed-value handling"
+    },
+    {
+      "file": "test_v6_http_method_and_redirect_matrix.py",
+      "count": 13,
+      "focus": "HTTP method, no-follow redirect and pre-network scope enforcement"
+    },
+    {
+      "file": "test_v6_origin_credential_isolation.py",
+      "count": 18,
+      "focus": "Exact-origin credential isolation and same-host different-port regressions"
+    },
+    {
+      "file": "test_v6_redaction_fuzz_matrix.py",
+      "count": 149,
+      "focus": "Inherited registered sensitive field/query names and recursive redaction matrix"
+    },
+    {
+      "file": "test_v6_risk_math_matrix.py",
+      "count": 532,
+      "focus": "Fine-grained severity/confidence risk scoring invariants"
+    },
+    {
+      "file": "test_v6_rule_behavior_matrix.py",
+      "count": 75,
+      "focus": "Parameterized behavior checks for registered passive and low-impact rules"
+    },
+    {
+      "file": "test_v6_schema_hardening_matrix.py",
+      "count": 51,
+      "focus": "Boundary values, header injection and authorization profile schema checks"
+    },
+    {
+      "file": "test_v6_scope_fuzz_matrix.py",
+      "count": 93,
+      "focus": "Inherited adversarial URL, nested encoding, ports, scope joins and exclusions"
+    },
+    {
+      "file": "test_v7_authorization_readonly_matrix.py",
+      "count": 14,
+      "focus": "Read-only role comparisons, authorization candidates, scope enforcement and request-body invariants"
+    },
+    {
+      "file": "test_v7_crawler_inventory_matrix.py",
+      "count": 48,
+      "focus": "Synthetic HTML, links, forms, JS routes, scope limits and technology fingerprints"
+    },
+    {
+      "file": "test_v7_openapi_contract_matrix.py",
+      "count": 125,
+      "focus": "OpenAPI effective auth declarations, URL-like parameters, API classification and GraphQL inventory"
+    },
+    {
+      "file": "test_v7_parameter_probe_policy_matrix.py",
+      "count": 36,
+      "focus": "Non-sensitive parameter selection, request limits, and benign GET canary policy"
+    },
+    {
+      "file": "test_v7_redaction_properties.py",
+      "count": 251,
+      "focus": "Sensitive field/query normalization, recursive URL decoding and benign-value invariants"
+    },
+    {
+      "file": "test_v7_report_sink_matrix.py",
+      "count": 71,
+      "focus": "HTML/Markdown injection resistance, CSV formula safety, JSON/SARIF schema contracts"
+    },
+    {
+      "file": "test_v7_schema_boundary_fuzz.py",
+      "count": 146,
+      "focus": "Input bounds, header injection variants, profiles and configuration limits"
+    },
+    {
+      "file": "test_v7_scope_adversarial_properties.py",
+      "count": 470,
+      "focus": "Encoded path exclusions, exact ports, hostile URL forms and scope joins"
+    },
+    {
+      "file": "test_v7_transport_boundary_matrix.py",
+      "count": 98,
+      "focus": "Exact-origin credential isolation, forbidden transport headers and redirect non-following"
+    },
+    {
+      "file": "test_v7_zap_plan_serialization.py",
+      "count": 21,
+      "focus": "YAML serialization without injection and malformed ZAP endpoint rejection"
+    }
+  ],
+  "interpretation": "Software regression tests and code coverage are not a percentage of vulnerabilities detected."
+}

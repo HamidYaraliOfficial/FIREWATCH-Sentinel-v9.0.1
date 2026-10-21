@@ -1,0 +1,80 @@
+﻿id,category,title,execution_mode,status_semantics,standard_mapping,safe_by_default
+WSTG-INFO-01,Information Gathering,Search-engine / public metadata review,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-INFO,True
+WSTG-INFO-02,Information Gathering,Fingerprint web server and technologies,automated_passive,implemented,WSTG-INFO,True
+WSTG-INFO-03,Information Gathering,Review metadata and comments in HTML,automated_passive,implemented,WSTG-INFO,True
+WSTG-INFO-04,Information Gathering,Enumerate application entry points,automated_passive,implemented,WSTG-INFO,True
+WSTG-INFO-05,Information Gathering,Review web page content for information leakage,automated_passive,implemented,WSTG-INFO,True
+WSTG-INFO-06,Information Gathering,Identify application frameworks,automated_passive,implemented,WSTG-INFO,True
+WSTG-INFO-07,Information Gathering,Map execution paths and discovered routes,automated_passive,implemented,WSTG-INFO,True
+WSTG-CONF-01,Configuration,Check security headers and browser policy,automated_passive,implemented,WSTG-CONF,True
+WSTG-CONF-02,Configuration,Review exposed backup/configuration artifacts,automated_review_candidate,candidate_or_additional_validation_required,WSTG-CONF,True
+WSTG-CONF-03,Configuration,Review HTTP methods and OPTIONS observations,automated_passive,implemented,WSTG-CONF,True
+WSTG-CONF-04,Configuration,Review TLS/certificate posture,automated_passive,implemented,WSTG-CONF,True
+WSTG-CONF-05,Configuration,Check subdomain takeover conditions,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-CONF,True
+WSTG-CONF-06,Configuration,Review application/platform error handling,automated_passive,implemented,WSTG-CONF,True
+WSTG-CONF-07,Configuration,"Review HSTS, redirect and cleartext transport",automated_passive,implemented,WSTG-CONF,True
+WSTG-CONF-08,Configuration,Review CSP directives and enforcement,automated_passive,implemented,WSTG-CONF,True
+WSTG-CONF-09,Configuration,Review source-map and public asset indicators,automated_review_candidate,candidate_or_additional_validation_required,WSTG-CONF,True
+WSTG-CONF-10,Configuration,Review cross-origin isolation policy,automated_review_candidate,candidate_or_additional_validation_required,WSTG-CONF,True
+WSTG-IDNT-01,Identity,Role/tenant model and identity lifecycle,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-IDNT,True
+WSTG-IDNT-02,Identity,Account enumeration on registration/recovery,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-IDNT,True
+WSTG-ATHN-01,Authentication,Credentials transported only over HTTPS,automated_passive,implemented,WSTG-ATHN,True
+WSTG-ATHN-02,Authentication,Default/weak credential assessment,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHN,True
+WSTG-ATHN-03,Authentication,Password policy and breached-password checks,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHN,True
+WSTG-ATHN-04,Authentication,Authentication bypass and alternate channels,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHN,True
+WSTG-ATHN-05,Authentication,MFA enforcement and recovery controls,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHN,True
+WSTG-ATHN-06,Authentication,Password reset and account recovery workflows,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHN,True
+WSTG-ATHN-07,Authentication,Rate limiting and lockout behavior,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHN,True
+WSTG-ATHN-08,Authentication,Authentication response differences,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHN,True
+WSTG-ATHN-09,Authentication,Logout and session invalidation,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHN,True
+WSTG-ATHZ-01,Authorization,Read-only comparison of supplied role profiles,automated_review_candidate,candidate_or_additional_validation_required,WSTG-ATHZ,True
+WSTG-ATHZ-02,Authorization,Vertical privilege escalation / function authorization,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHZ,True
+WSTG-ATHZ-03,Authorization,Horizontal access / IDOR / BOLA,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHZ,True
+WSTG-ATHZ-04,Authorization,Tenant isolation and object ownership,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHZ,True
+WSTG-ATHZ-05,Authorization,Path traversal and forced browsing,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-ATHZ,True
+WSTG-SESS-01,Session Management,Cookie Secure/HttpOnly/SameSite flags,automated_passive,implemented,WSTG-SESS,True
+WSTG-SESS-02,Session Management,Cookie prefixes and SameSite=None constraints,automated_passive,implemented,WSTG-SESS,True
+WSTG-SESS-03,Session Management,Session fixation and rotation,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-SESS,True
+WSTG-SESS-04,Session Management,Session timeout and renewal,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-SESS,True
+WSTG-SESS-05,Session Management,CSRF tokens and origin validation,automated_review_candidate,candidate_or_additional_validation_required,WSTG-SESS,True
+WSTG-SESS-06,Session Management,Concurrent sessions and logout invalidation,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-SESS,True
+WSTG-SESS-07,Session Management,Cache-control behavior for personalized content,automated_review_candidate,candidate_or_additional_validation_required,WSTG-SESS,True
+WSTG-INPV-01,Input Validation,Reflected input canary (not an XSS proof),automated_review_candidate,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-02,Input Validation,Stored and DOM-based cross-site scripting (XSS) assessment,optional_specialist_tool_required,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-03,Input Validation,SQL/NoSQL injection confirmation,optional_specialist_tool_required,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-04,Input Validation,OS command injection,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-05,Input Validation,Server-side template injection,optional_specialist_tool_required,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-06,Input Validation,LDAP/XPath/other interpreter injection,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-07,Input Validation,XML external entity processing (XXE),manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-08,Input Validation,SSRF and URL-fetch input review,automated_review_candidate,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-09,Input Validation,Path traversal and file inclusion,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-INPV-10,Input Validation,HTTP parameter pollution and mass assignment,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-INPV,True
+WSTG-ERRH-01,Error Handling,Verbose framework / stack-trace disclosure,automated_passive,implemented,WSTG-ERRH,True
+WSTG-CRYP-01,Cryptography,"TLS certificate, protocol and cipher posture",automated_passive,implemented,WSTG-CRYP,True
+WSTG-CRYP-02,Cryptography,Sensitive data over cleartext transport,automated_review_candidate,candidate_or_additional_validation_required,WSTG-CRYP,True
+WSTG-BUSL-01,Business Logic,Workflow/state-machine validation,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-BUSL,True
+WSTG-BUSL-02,Business Logic,Price/quantity/coupon/limit manipulation,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-BUSL,True
+WSTG-BUSL-03,Business Logic,"Replay, idempotency and duplicate submission",manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-BUSL,True
+WSTG-BUSL-04,Business Logic,Abuse of application workflows,manual_or_test-account_required,candidate_or_additional_validation_required,WSTG-BUSL,True
+WSTG-CLNT-01,Client-side,DOM sinks and client-side data flow,optional_specialist_tool_required,candidate_or_additional_validation_required,WSTG-CLNT,True
+WSTG-CLNT-02,Client-side,Third-party script SRI and supply chain,automated_passive,implemented,WSTG-CLNT,True
+WSTG-CLNT-03,Client-side,CORS and cross-origin policy observations,automated_passive,implemented,WSTG-CLNT,True
+WSTG-CLNT-04,Client-side,Clickjacking defense,automated_passive,implemented,WSTG-CLNT,True
+API-01,API Security,API inventory and deprecated/versioned routes,automated_passive,implemented,OWASP API Top 10,True
+API-02,API Security,OpenAPI/Swagger authentication declaration review,automated_review_candidate,candidate_or_additional_validation_required,OWASP API Top 10,True
+API-03,API Security,GraphQL discovery and read-only introspection,automated_review_candidate,candidate_or_additional_validation_required,OWASP API Top 10,True
+API-04,API Security,BOLA / object-level authorization,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP API Top 10,True
+API-05,API Security,Broken function-level authorization,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP API Top 10,True
+API-06,API Security,Property-level authorization and mass assignment,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP API Top 10,True
+API-07,API Security,Authentication and token lifecycle,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP API Top 10,True
+API-08,API Security,Resource-consumption/rate-limit policy,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP API Top 10,True
+API-09,API Security,SSRF-like URL parameters in API specs,automated_review_candidate,candidate_or_additional_validation_required,OWASP API Top 10,True
+API-10,API Security,API misconfiguration and sensitive data exposure,automated_review_candidate,candidate_or_additional_validation_required,OWASP API Top 10,True
+SUPPLY-01,Software Supply Chain,Third-party script integrity indicators,automated_passive,implemented,OWASP Top 10:2025,True
+SUPPLY-02,Software Supply Chain,Dependency/SBOM vulnerability review,optional_specialist_tool_required,candidate_or_additional_validation_required,OWASP ASVS 5.0,True
+CLOUD-01,Cloud/Deployment,Cloud IAM and storage policy review,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP ASVS 5.0,True
+CLOUD-02,Cloud/Deployment,Container image and IaC scanning,optional_specialist_tool_required,candidate_or_additional_validation_required,OWASP ASVS 5.0,True
+PRIV-01,Privacy/Data Exposure,PII exposure in authenticated response bodies,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP ASVS 5.0,True
+LOG-01,Logging/Monitoring,Security event logging and alerting validation,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP ASVS 5.0,True
+UPLOAD-01,File Upload,"Upload type, storage, execution and size controls",manual_or_test-account_required,candidate_or_additional_validation_required,OWASP WSTG,True
+UPLOAD-02,File Upload,Download disposition and path handling,manual_or_test-account_required,candidate_or_additional_validation_required,OWASP WSTG,True
