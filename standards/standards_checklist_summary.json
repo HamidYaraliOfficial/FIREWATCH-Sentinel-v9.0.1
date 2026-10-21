@@ -1,0 +1,69 @@
+{
+  "edition": "FIREWATCH Sentinel v9",
+  "generated_at": "2026-10-15",
+  "framework_count": 67,
+  "domain_count": 32,
+  "control_count": 469,
+  "controls_by_domain": {
+    "GOV": 20,
+    "RISK": 16,
+    "ASSET": 15,
+    "ARCH": 15,
+    "AUTHN": 20,
+    "AUTHZ": 18,
+    "SESSION": 15,
+    "INPUT": 20,
+    "API": 20,
+    "WEB": 18,
+    "CRYPTO": 18,
+    "DATA": 16,
+    "FILES": 15,
+    "BUSINESS": 15,
+    "ERROR": 15,
+    "SDLC": 20,
+    "SUPPLY": 18,
+    "CLOUD": 18,
+    "AVAIL": 15,
+    "VULN": 15,
+    "PRIVREG": 12,
+    "ACCESS": 12,
+    "MOBILE": 10,
+    "AI": 14,
+    "SCANNER": 20,
+    "EVIDENCE": 12,
+    "STANDARDS": 12,
+    "RELEASE": 14,
+    "ACCESSIBILITY_REG": 4,
+    "IDENTITY_PROTOCOLS": 6,
+    "HTTP_PROTOCOLS": 6,
+    "SUPPORT": 5
+  },
+  "controls_by_priority": {
+    "P0": 136,
+    "P1": 296,
+    "P2": 37
+  },
+  "controls_by_verification_mode": {
+    "manual_review": 164,
+    "interview_or_evidence": 62,
+    "automated_passive": 66,
+    "manual_or_specialist_tool": 67,
+    "automated_readonly": 26,
+    "external_tool": 18,
+    "automated_plus_manual": 12,
+    "specialist_tool": 10,
+    "manual_or_evidence": 44
+  },
+  "controls_by_applicability": {
+    "core": 363,
+    "conditional": 94,
+    "adjacent": 12
+  },
+  "controls_by_relationship": {
+    "direct": 1204,
+    "supporting": 1827,
+    "conditional": 378,
+    "adjacent": 34
+  },
+  "claims": "The count is the number of curated checklist records, not the number of official clauses or tests actually executed."
+}

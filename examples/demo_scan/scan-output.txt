@@ -1,0 +1,9 @@
+FIREWATCH Sentinel v9.0.1 — reproducible local demo scan
+Scan ID: 7ed5df79-747c-4068-9ef8-58f94a702f64
+Target: http://127.0.0.1:8789/ (included deliberately vulnerable local demo only)
+Status: completed
+Findings: 41
+Report formats: report.html, report.json, findings.csv, report.md, report.sarif.json
+Bundle: report-bundle.zip (manifest includes per-report byte counts and SHA-256)
+
+This output is illustrative, generated against the included local demo target. It is not evidence about any external website.
